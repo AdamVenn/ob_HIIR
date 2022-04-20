@@ -6,9 +6,6 @@
 
 #include "JuceHeader.h"
 #include <atomic>
-#ifdef JUCE_CLANG
-#include <mm_malloc.h>
-#endif
 
 namespace ob {
 namespace General {

@@ -1535,7 +1535,11 @@ const double	PI			= 3.1415926535897932384626433832795;
 
 /*\\\ INCLUDE FILES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-#include	<xmmintrin.h>
+#ifdef __x86_64__
+   #include <xmmintrin.h>
+#else
+  #include "sse2neon.h"
+#endif
 
 namespace hiir
 {
@@ -1677,7 +1681,11 @@ const double	PI			= 3.1415926535897932384626433832795;
 
 /*** End of inlined file: def.h ***/
 
-#include <xmmintrin.h>
+#ifdef __x86_64__
+   #include <xmmintrin.h>
+#else
+  #include "sse2neon.h"
+#endif
 
 namespace hiir
 {
@@ -1846,7 +1854,11 @@ hiir_FORCEINLINE void	StageProcSse <0>::process_sample_neg (StageDataSse * /* st
 
 /*** End of inlined file: StageProcSse.h ***/
 
-#include	<xmmintrin.h>
+#ifdef __x86_64__
+   #include <xmmintrin.h>
+#else
+  #include "sse2neon.h"
+#endif
 
 #include	<cassert>
 
@@ -2317,7 +2329,11 @@ public:
 
 /*** End of inlined file: StageDataSse.h ***/
 
-#include	<xmmintrin.h>
+#ifdef __x86_64__
+   #include <xmmintrin.h>
+#else
+  #include "sse2neon.h"
+#endif
 
 namespace hiir
 {
@@ -2427,7 +2443,11 @@ const double	PI			= 3.1415926535897932384626433832795;
 
 /*** End of inlined file: def.h ***/
 
-#include <xmmintrin.h>
+#ifdef __x86_64__
+   #include <xmmintrin.h>
+#else
+  #include "sse2neon.h"
+#endif
 
 namespace hiir
 {
@@ -2596,7 +2616,11 @@ hiir_FORCEINLINE void	StageProcSse <0>::process_sample_neg (StageDataSse * /* st
 
 /*** End of inlined file: StageProcSse.h ***/
 
-#include	<xmmintrin.h>
+#ifdef __x86_64__
+   #include <xmmintrin.h>
+#else
+  #include "sse2neon.h"
+#endif
 
 #include	<cassert>
 

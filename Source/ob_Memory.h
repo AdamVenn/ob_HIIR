@@ -5,6 +5,7 @@
 #pragma once
 
 #include <stdexcept>    // std::length_error
+#include <new>
 
 namespace ob {
 namespace General {
